@@ -9,6 +9,6 @@ node {
   }
   stage ('war test')
   {
-   sh 'sudo sshpass -p "5921"  cp var/lib/jenkins/workspace/1st_maven/target/sparkjava-hello-world-1.0.war /opt/tomcat/apache-tomcat-9.0.45/webapps'
+   sh 'sudo sshpass -p "5921" cp /var/lib/jenkins/workspace/1st_maven/target/sparkjava-hello-world-1.0.war /opt/tomcat/apache-tomcat-9.0.45/webapps'
   }
 }
